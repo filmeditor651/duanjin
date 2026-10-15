@@ -1,0 +1,2413 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="description" content="段金卓｜河南理工大学自动化卓越计划班本科生个人简历">
+  <meta name="theme-color" content="#FFFDF0">
+  <title>段金卓｜个人简历</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+    rel="stylesheet"
+  >
+  <script src="https://cdn.tailwindcss.com" defer></script>
+
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("resume-theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
+    } catch (_) {}
+  </script>
+
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #FFFDF0;
+      --ink: #000;
+      --white: #fff;
+      --lime: #A3E635;
+      --purple: #C084FC;
+      --yellow: #FDE047;
+      --blue: #38BDF8;
+      --pink: #FB7185;
+      --orange: #FB923C;
+      --muted: #F5F0DC;
+      --header-height: 116px;
+      --shadow: 4px 4px 0 0 #000;
+      --shadow-lg: 7px 7px 0 0 #000;
+    }
+
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --paper: #1F1F1F;
+      --white: #FFFDF0;
+      --muted: #E9E2C8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--header-height) + 18px);
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      overflow-x: hidden;
+      color: var(--ink);
+      background-color: var(--paper);
+      background-image: radial-gradient(#000 1.35px, transparent 1.35px);
+      background-position: 0 0;
+      background-size: 20px 20px;
+      font-family:
+        "Space Grotesk", "PingFang SC", "Microsoft YaHei",
+        Arial, sans-serif;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    :root[data-theme="dark"] body {
+      background-image: radial-gradient(rgba(255, 255, 255, .28) 1.35px, transparent 1.35px);
+    }
+
+    h1,
+    h2,
+    h3,
+    .display-font {
+      font-family:
+        "Archivo Black", "Arial Black", "PingFang SC",
+        "Microsoft YaHei", sans-serif;
+      font-weight: 900;
+      line-height: 1.15;
+    }
+
+    button,
+    a {
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 4px solid var(--blue);
+      outline-offset: 3px;
+    }
+
+    ::selection {
+      color: #000;
+      background: var(--yellow);
+    }
+
+    .skip-link {
+      position: fixed;
+      z-index: 9999;
+      top: 10px;
+      left: 10px;
+      padding: 10px 14px;
+      border: 3px solid #000;
+      color: #000;
+      background: var(--yellow);
+      box-shadow: var(--shadow);
+      font-weight: 800;
+      transform: translateY(-180%);
+    }
+
+    .skip-link:focus {
+      transform: none;
+    }
+
+    .page-container {
+      width: min(calc(100% - 28px), 1160px);
+      margin-inline: auto;
+    }
+
+    .brutal-border {
+      border: 3px solid #000;
+    }
+
+    .brutal-shadow {
+      box-shadow: var(--shadow);
+    }
+
+    .brutal-card {
+      border: 3px solid #000;
+      box-shadow: var(--shadow);
+      transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+    }
+
+    .brutal-button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+      border: 3px solid #000;
+      gap: 8px;
+      color: #000;
+      background: #fff;
+      box-shadow: var(--shadow);
+      cursor: pointer;
+      font-weight: 800;
+      transition:
+        transform 120ms ease,
+        box-shadow 120ms ease,
+        background-color 120ms ease;
+    }
+
+    .brutal-button:hover {
+      box-shadow: 2px 2px 0 0 #000;
+      transform: translate(2px, 2px);
+    }
+
+    .brutal-button:active {
+      box-shadow: 0 0 0 0 #000;
+      transform: translate(4px, 4px);
+    }
+
+    .sticker {
+      display: inline-flex;
+      min-height: 34px;
+      align-items: center;
+      padding: 5px 11px;
+      border: 2px solid #000;
+      border-radius: 999px;
+      color: #000;
+      background: #fff;
+      box-shadow: 2px 2px 0 #000;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1.2;
+      transform: rotate(var(--rotate, 0deg));
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition:
+        opacity 420ms ease,
+        transform 420ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    .scroll-progress {
+      position: fixed;
+      z-index: 1200;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 5px;
+      border-right: 2px solid #000;
+      background: var(--lime);
+      will-change: width;
+    }
+
+    .site-header {
+      position: fixed;
+      z-index: 1100;
+      top: 0;
+      right: 0;
+      left: 0;
+      padding-top: env(safe-area-inset-top);
+      border-bottom: 3px solid #000;
+      background: var(--paper);
+    }
+
+    .header-top {
+      display: flex;
+      min-height: 65px;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      gap: 10px;
+      font-weight: 900;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      flex: 0 0 auto;
+      border: 3px solid #000;
+      place-items: center;
+      color: #000;
+      background: var(--lime);
+      box-shadow: 3px 3px 0 #000;
+      font-family: "Archivo Black", "Arial Black", sans-serif;
+      font-size: 16px;
+      transform: rotate(-2deg);
+    }
+
+    .brand-name {
+      font-family: "Archivo Black", "Arial Black", sans-serif;
+      font-size: 17px;
+      font-weight: 900;
+    }
+
+    .header-actions {
+      display: flex;
+      margin-left: auto;
+      gap: 8px;
+    }
+
+    .square-button {
+      width: 46px;
+      min-width: 46px;
+      height: 46px;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    .main-nav {
+      display: flex;
+      min-height: 50px;
+      align-items: center;
+      padding-bottom: 6px;
+      gap: 8px;
+      overflow-x: auto;
+      overscroll-behavior-x: contain;
+      scrollbar-width: none;
+    }
+
+    .main-nav::-webkit-scrollbar,
+    .tabs::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-link {
+      display: inline-flex;
+      min-height: 39px;
+      flex: 0 0 auto;
+      align-items: center;
+      padding: 6px 12px;
+      border: 2px solid transparent;
+      color: #000;
+      background: var(--paper);
+      font-size: 13px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    :root[data-theme="dark"] .nav-link {
+      color: #fff;
+    }
+
+    .nav-link.active {
+      border-color: #000;
+      color: #000;
+      background: var(--yellow);
+      box-shadow: 3px 3px 0 #000;
+      transform: rotate(-1deg);
+    }
+
+    main {
+      overflow: clip;
+    }
+
+    .hero {
+      position: relative;
+      padding: calc(var(--header-height) + 46px) 0 52px;
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 30px;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      min-height: 38px;
+      align-items: center;
+      padding: 6px 12px;
+      border: 3px solid #000;
+      gap: 8px;
+      color: #000;
+      background: var(--yellow);
+      box-shadow: 3px 3px 0 #000;
+      font-size: 12px;
+      font-weight: 900;
+      transform: rotate(-1deg);
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border: 2px solid #000;
+      border-radius: 50%;
+      background: var(--lime);
+    }
+
+    .hero-title {
+      margin: 22px 0 0;
+      color: var(--ink);
+      font-size: clamp(48px, 17vw, 82px);
+      letter-spacing: -.065em;
+      line-height: .98;
+      text-transform: uppercase;
+    }
+
+    :root[data-theme="dark"] .hero-title,
+    :root[data-theme="dark"] .section-title {
+      color: #fff;
+    }
+
+    .hero-name {
+      display: inline-block;
+      padding: 2px 7px 6px;
+      border: 3px solid #000;
+      color: #000;
+      background: var(--purple);
+      box-shadow: 5px 5px 0 #000;
+      transform: rotate(-1deg);
+    }
+
+    .hero-role {
+      max-width: 760px;
+      margin: 22px 0 0;
+      color: #000;
+      font-family: "Archivo Black", "Arial Black", sans-serif;
+      font-size: clamp(18px, 5.5vw, 28px);
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    :root[data-theme="dark"] .hero-role,
+    :root[data-theme="dark"] .hero-summary {
+      color: #fff;
+    }
+
+    .hero-summary {
+      max-width: 760px;
+      margin: 16px 0 0;
+      color: #151515;
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.9;
+    }
+
+    .badge-list,
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 24px 0 0;
+      padding: 0;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .hero-actions {
+      display: grid;
+      margin-top: 28px;
+      gap: 12px;
+    }
+
+    .hero-actions .brutal-button {
+      width: 100%;
+    }
+
+    .profile-card {
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+      background: var(--blue);
+      box-shadow: var(--shadow-lg);
+      transform: rotate(1deg);
+    }
+
+    .profile-card::before {
+      position: absolute;
+      top: -22px;
+      right: -24px;
+      width: 105px;
+      height: 105px;
+      border: 3px solid #000;
+      border-radius: 50%;
+      background: var(--yellow);
+      content: "";
+    }
+
+    .profile-card::after {
+      position: absolute;
+      top: 13px;
+      right: 11px;
+      color: #000;
+      content: "✦";
+      font-family: "Archivo Black", sans-serif;
+      font-size: 45px;
+      line-height: 1;
+      transform: rotate(12deg);
+    }
+
+    .avatar {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      width: 112px;
+      height: 140px;
+      margin-bottom: 22px;
+      border: 3px solid #000;
+      place-items: center;
+      overflow: hidden;
+      color: #000;
+      background: var(--lime);
+      box-shadow: 5px 5px 0 #000;
+      font-family: "Archivo Black", "Arial Black", sans-serif;
+      font-size: 29px;
+      font-weight: 900;
+      letter-spacing: -.08em;
+      transform: rotate(-3deg);
+    }
+
+    .avatar img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 18%;
+    }
+
+    .avatar-fallback {
+      display: none;
+      width: 100%;
+      height: 100%;
+      place-items: center;
+    }
+
+    .avatar.image-error .avatar-fallback {
+      display: grid;
+    }
+
+    .profile-name {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      color: #000;
+      font-size: 27px;
+    }
+
+    .profile-subtitle {
+      position: relative;
+      z-index: 1;
+      margin: 5px 0 19px;
+      color: #000;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .profile-list {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      padding: 0;
+      border: 3px solid #000;
+      background: #fff;
+      list-style: none;
+    }
+
+    .profile-list li {
+      display: flex;
+      min-height: 49px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px 11px;
+      border-bottom: 2px solid #000;
+      gap: 12px;
+      color: #000;
+      font-size: 12px;
+    }
+
+    .profile-list li:last-child {
+      border-bottom: 0;
+    }
+
+    .profile-label {
+      flex: 0 0 auto;
+      font-weight: 700;
+    }
+
+    .profile-value {
+      max-width: 68%;
+      padding: 0;
+      border: 0;
+      color: #000;
+      background: transparent;
+      font-weight: 900;
+      text-align: right;
+      word-break: break-all;
+    }
+
+    button.profile-value {
+      min-height: 42px;
+      cursor: pointer;
+    }
+
+    .marquee {
+      overflow: hidden;
+      border-top: 3px solid #000;
+      border-bottom: 3px solid #000;
+      color: #000;
+      background: var(--lime);
+      transform: rotate(-1deg) scale(1.02);
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      padding: 8px 0;
+      gap: 26px;
+      font-family: "Archivo Black", "Arial Black", sans-serif;
+      font-size: 17px;
+      font-weight: 900;
+      white-space: nowrap;
+      animation: marquee 22s linear infinite;
+    }
+
+    @keyframes marquee {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .section {
+      padding: 60px 0;
+      content-visibility: auto;
+      contain-intrinsic-size: 700px;
+    }
+
+    .section-head {
+      margin-bottom: 27px;
+    }
+
+    .section-kicker {
+      display: inline-flex;
+      margin: 0 0 11px;
+      padding: 4px 9px;
+      border: 2px solid #000;
+      color: #000;
+      background: var(--purple);
+      box-shadow: 2px 2px 0 #000;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      transform: rotate(-1.5deg);
+    }
+
+    .section-title {
+      margin: 0;
+      color: #000;
+      font-size: clamp(31px, 10vw, 48px);
+      letter-spacing: -.045em;
+      text-transform: uppercase;
+    }
+
+    .section-description {
+      max-width: 540px;
+      margin: 10px 0 0;
+      padding: 10px 13px;
+      border: 2px solid #000;
+      color: #000;
+      background: #fff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .highlight-grid,
+    .project-grid,
+    .skill-grid,
+    .education-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .highlight-card {
+      position: relative;
+      min-height: 170px;
+      overflow: hidden;
+      padding: 22px;
+      color: #000;
+      background: #fff;
+    }
+
+    .highlight-card:nth-child(1) {
+      background: var(--lime);
+      transform: rotate(-1deg);
+    }
+
+    .highlight-card:nth-child(2) {
+      background: var(--purple);
+      transform: rotate(1deg);
+    }
+
+    .highlight-card:nth-child(3) {
+      background: var(--yellow);
+      transform: rotate(-.6deg);
+    }
+
+    .highlight-card:nth-child(4) {
+      background: var(--blue);
+      transform: rotate(1.2deg);
+    }
+
+    .highlight-number {
+      margin: 0 0 11px;
+      font-family: "Archivo Black", "Arial Black", sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: -.05em;
+    }
+
+    .highlight-title {
+      margin: 0 0 7px;
+      font-size: 17px;
+    }
+
+    .highlight-detail {
+      margin: 0;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.65;
+    }
+
+    .content-panel {
+      padding: 17px;
+      background: var(--muted);
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 26px;
+      padding: 5px;
+      border: 3px solid #000;
+      gap: 7px;
+      background: #fff;
+      box-shadow: 3px 3px 0 #000;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .tab-button {
+      min-width: 100px;
+      min-height: 45px;
+      flex: 0 0 auto;
+      padding: 8px 14px;
+      border: 2px solid #000;
+      color: #000;
+      background: var(--muted);
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 900;
+      transition:
+        transform 120ms ease,
+        box-shadow 120ms ease;
+    }
+
+    .tab-button[aria-selected="true"] {
+      background: var(--yellow);
+      box-shadow: 3px 3px 0 #000;
+      transform: rotate(-1deg);
+    }
+
+    .tab-button:hover {
+      transform: translate(1px, 1px);
+    }
+
+    [role="tabpanel"][hidden] {
+      display: none;
+    }
+
+    .timeline {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .timeline::before {
+      position: absolute;
+      top: 10px;
+      bottom: 12px;
+      left: 9px;
+      width: 4px;
+      background: #000;
+      content: "";
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 0 0 35px 39px;
+    }
+
+    .timeline-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      top: 6px;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      border: 3px solid #000;
+      border-radius: 50%;
+      background: var(--lime);
+    }
+
+    .timeline-box {
+      padding: 18px;
+      border: 3px solid #000;
+      color: #000;
+      background: #fff;
+      box-shadow: 4px 4px 0 #000;
+    }
+
+    .timeline-role {
+      margin: 0;
+      font-size: 19px;
+    }
+
+    .timeline-time {
+      display: inline-flex;
+      min-height: 30px;
+      align-items: center;
+      margin-top: 8px;
+      padding: 3px 9px;
+      border: 2px solid #000;
+      color: #000;
+      background: var(--purple);
+      font-size: 11px;
+      font-weight: 900;
+      transform: rotate(1deg);
+    }
+
+    .timeline-org {
+      display: inline-block;
+      margin: 11px 0 14px;
+      padding: 2px 7px;
+      color: #000;
+      background: var(--lime);
+      font-weight: 900;
+    }
+
+    .bullet-list {
+      display: grid;
+      margin: 0;
+      padding-left: 1.2rem;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .bullet-list li::marker {
+      color: #000;
+      font-weight: 900;
+    }
+
+    .project-card {
+      position: relative;
+      display: flex;
+      min-height: 330px;
+      overflow: hidden;
+      flex-direction: column;
+      padding: 22px;
+      color: #000;
+      background: #fff;
+    }
+
+    .project-card:nth-child(even) {
+      background: #F7EDFF;
+    }
+
+    .project-index {
+      display: grid;
+      width: 43px;
+      height: 43px;
+      margin-bottom: 19px;
+      border: 3px solid #000;
+      place-items: center;
+      background: var(--blue);
+      box-shadow: 3px 3px 0 #000;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 13px;
+      transform: rotate(-2deg);
+    }
+
+    .project-title {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .project-status {
+      display: inline-flex;
+      width: fit-content;
+      margin: 10px 0 15px;
+      padding: 3px 8px;
+      border: 2px solid #000;
+      background: var(--lime);
+      font-size: 11px;
+      font-weight: 900;
+      transform: rotate(1deg);
+    }
+
+    .project-summary {
+      margin: 0;
+      font-size: 13px;
+      font-weight: 650;
+    }
+
+    .project-result {
+      margin: 17px 0 0;
+      padding: 12px;
+      border: 2px solid #000;
+      background: var(--yellow);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .project-card .tag-list {
+      margin-top: auto;
+      padding-top: 22px;
+    }
+
+    .skill-card {
+      padding: 21px;
+      color: #000;
+      background: #fff;
+    }
+
+    .skill-card:nth-child(2) {
+      background: #F5E9FF;
+    }
+
+    .skill-card:nth-child(3) {
+      background: #F1FFD8;
+    }
+
+    .skill-card:nth-child(4) {
+      background: #E3F7FF;
+    }
+
+    .skill-heading {
+      display: flex;
+      align-items: center;
+      margin: 0 0 18px;
+      gap: 11px;
+      font-size: 19px;
+    }
+
+    .skill-icon {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      border: 3px solid #000;
+      place-items: center;
+      background: var(--yellow);
+      box-shadow: 3px 3px 0 #000;
+      font-family: "Archivo Black", sans-serif;
+      font-size: 13px;
+      transform: rotate(-2deg);
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 0;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .skill-item {
+      display: flex;
+      min-height: 42px;
+      align-items: center;
+      padding: 7px 10px;
+      border: 2px solid #000;
+      gap: 7px;
+      background: #fff;
+      box-shadow: 2px 2px 0 #000;
+      font-size: 12px;
+      font-weight: 900;
+      transform: rotate(var(--rotate, 0deg));
+    }
+
+    .skill-level {
+      padding: 2px 5px;
+      border: 1px solid #000;
+      background: var(--lime);
+      font-size: 9px;
+      white-space: nowrap;
+    }
+
+    .education-card,
+    .focus-card {
+      padding: 22px;
+      color: #000;
+      background: #fff;
+    }
+
+    .focus-card {
+      background: var(--purple);
+    }
+
+    .education-card h3,
+    .focus-card h3 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .education-major {
+      display: inline-block;
+      margin: 9px 0 0;
+      padding: 4px 8px;
+      border: 2px solid #000;
+      background: var(--lime);
+      font-size: 13px;
+      font-weight: 900;
+      transform: rotate(-1deg);
+    }
+
+    .education-date {
+      display: block;
+      width: fit-content;
+      margin: 11px 0 18px;
+      padding: 3px 8px;
+      border: 2px solid #000;
+      background: var(--yellow);
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .focus-list {
+      display: grid;
+      margin: 17px 0 0;
+      padding: 0;
+      gap: 10px;
+      list-style: none;
+    }
+
+    .focus-list li {
+      position: relative;
+      padding: 10px 10px 10px 38px;
+      border: 2px solid #000;
+      background: #fff;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .focus-list li::before {
+      position: absolute;
+      top: 50%;
+      left: 11px;
+      content: "✦";
+      font-size: 17px;
+      font-weight: 900;
+      transform: translateY(-50%);
+    }
+
+    .footer {
+      padding: 32px 0 calc(32px + env(safe-area-inset-bottom));
+      border-top: 3px solid #000;
+      color: #000;
+      background: var(--yellow);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .footer-inner {
+      display: grid;
+      gap: 5px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      z-index: 1000;
+      right: 16px;
+      bottom: calc(16px + env(safe-area-inset-bottom));
+      width: 49px;
+      min-width: 49px;
+      height: 49px;
+      padding: 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(14px);
+      transition:
+        opacity 180ms ease,
+        transform 180ms ease,
+        visibility 180ms ease;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+    }
+
+    .toast {
+      position: fixed;
+      z-index: 2000;
+      right: 14px;
+      bottom: calc(78px + env(safe-area-inset-bottom));
+      left: 14px;
+      padding: 12px 15px;
+      border: 3px solid #000;
+      color: #000;
+      background: var(--lime);
+      box-shadow: var(--shadow);
+      font-size: 13px;
+      font-weight: 900;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition:
+        opacity 180ms ease,
+        transform 180ms ease;
+    }
+
+    .toast.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      .brutal-card:hover {
+        box-shadow: 8px 8px 0 0 #000;
+        transform: translate(-2px, -2px);
+      }
+
+      .highlight-card:nth-child(1):hover,
+      .highlight-card:nth-child(2):hover,
+      .highlight-card:nth-child(3):hover,
+      .highlight-card:nth-child(4):hover {
+        box-shadow: 8px 8px 0 0 #000;
+        transform: translate(-2px, -2px) rotate(0deg);
+      }
+
+      .profile-card:hover {
+        box-shadow: 10px 10px 0 0 #000;
+        transform: translate(-2px, -2px) rotate(.4deg);
+      }
+    }
+
+    @media (min-width: 560px) {
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .hero-actions .brutal-button {
+        width: auto;
+        min-width: 145px;
+      }
+
+      .highlight-grid,
+      .project-grid,
+      .skill-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .toast {
+        right: auto;
+        bottom: 28px;
+        left: 50%;
+        width: max-content;
+        max-width: calc(100% - 28px);
+        transform: translate(-50%, 10px);
+      }
+
+      .toast.visible {
+        transform: translate(-50%, 0);
+      }
+    }
+
+    @media (min-width: 780px) {
+      :root {
+        --header-height: 76px;
+        --shadow: 5px 5px 0 0 #000;
+      }
+
+      .site-header .page-container {
+        display: flex;
+        min-height: 76px;
+        align-items: center;
+        gap: 22px;
+      }
+
+      .header-top {
+        min-height: 76px;
+      }
+
+      .main-nav {
+        min-width: 0;
+        flex: 1;
+        justify-content: center;
+        padding: 0;
+      }
+
+      .header-actions {
+        order: 3;
+      }
+
+      .hero {
+        padding-top: calc(var(--header-height) + 72px);
+        padding-bottom: 78px;
+      }
+
+      .hero-grid {
+        align-items: center;
+        grid-template-columns: minmax(0, 1.3fr) minmax(310px, .7fr);
+        gap: 54px;
+      }
+
+      .hero-title {
+        font-size: clamp(68px, 9vw, 108px);
+      }
+
+      .section {
+        padding: 78px 0;
+      }
+
+      .section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 35px;
+      }
+
+      .section-description {
+        margin: 0;
+      }
+
+      .content-panel {
+        padding: 28px;
+      }
+
+      .timeline-item {
+        padding-left: 47px;
+      }
+
+      .timeline-head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 22px;
+      }
+
+      .timeline-time {
+        flex: 0 0 auto;
+        margin-top: 0;
+      }
+
+      .education-grid {
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, .75fr);
+      }
+
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    @media (min-width: 1040px) {
+      .highlight-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 359px) {
+      .page-container {
+        width: min(calc(100% - 20px), 1160px);
+      }
+
+      .brand-name {
+        display: none;
+      }
+
+      .profile-card,
+      .content-panel,
+      .highlight-card,
+      .project-card,
+      .skill-card,
+      .education-card,
+      .focus-card {
+        padding: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @media print {
+      :root,
+      :root[data-theme="dark"] {
+        color-scheme: light;
+        --paper: #fff;
+        --white: #fff;
+        --muted: #fff;
+        --shadow: none;
+        --shadow-lg: none;
+      }
+
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
+      html,
+      body {
+        color: #000;
+        background: #fff;
+        background-image: none;
+        font-size: 9pt;
+      }
+
+      .scroll-progress,
+      .main-nav,
+      .header-actions,
+      .back-to-top,
+      .toast,
+      .marquee,
+      .tabs {
+        display: none !important;
+      }
+
+      .site-header {
+        position: static;
+        border-bottom: 3px solid #000;
+      }
+
+      .header-top {
+        min-height: 48px;
+      }
+
+      .hero {
+        padding: 24px 0;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1.45fr .55fr;
+        gap: 20px;
+      }
+
+      .hero-title {
+        font-size: 38pt;
+      }
+
+      .hero-role {
+        font-size: 13pt;
+      }
+
+      .hero-summary {
+        font-size: 8.5pt;
+      }
+
+      .hero-actions {
+        display: none;
+      }
+
+      .avatar {
+        width: 60px;
+        height: 75px;
+        font-size: 19px;
+      }
+
+      .profile-card,
+      .highlight-card,
+      .project-card,
+      .skill-card,
+      .education-card,
+      .focus-card,
+      .content-panel,
+      .timeline-box {
+        box-shadow: none !important;
+        transform: none !important;
+        break-inside: avoid;
+      }
+
+      .section {
+        padding: 20px 0;
+        content-visibility: visible;
+        contain-intrinsic-size: auto;
+      }
+
+      .section-head {
+        margin-bottom: 14px;
+      }
+
+      .section-title {
+        color: #000 !important;
+        font-size: 20pt;
+      }
+
+      .highlight-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+      }
+
+      .highlight-card {
+        min-height: 120px;
+        padding: 12px;
+      }
+
+      .highlight-number {
+        font-size: 22pt;
+      }
+
+      .project-grid,
+      .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      [role="tabpanel"][hidden] {
+        display: block !important;
+      }
+
+      [role="tabpanel"] + [role="tabpanel"] {
+        margin-top: 18px;
+      }
+
+      .project-card {
+        min-height: auto;
+      }
+
+      .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="page-container">
+      <div class="header-top">
+        <a class="brand" href="#top" aria-label="返回首页">
+          <span class="brand-mark" aria-hidden="true">段</span>
+          <span class="brand-name" id="brandName"></span>
+        </a>
+
+        <div class="header-actions">
+          <button
+            class="brutal-button square-button"
+            id="themeButton"
+            type="button"
+            aria-label="切换深浅色模式"
+            title="切换深浅色模式"
+          >
+            <i class="ri-contrast-2-line" aria-hidden="true"></i>
+          </button>
+
+          <button
+            class="brutal-button square-button"
+            id="printButton"
+            type="button"
+            aria-label="打印或保存为 PDF"
+            title="打印或保存为 PDF"
+          >
+            <i class="ri-printer-line" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+
+      <nav class="main-nav" id="navigation" aria-label="页面导航"></nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="page-container hero-grid">
+        <div class="reveal">
+          <div class="hero-kicker">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span id="heroStatus"></span>
+          </div>
+
+          <h1 class="hero-title">
+            HELLO!<br>
+            I'M <span class="hero-name" id="heroName"></span>
+          </h1>
+
+          <p class="hero-role" id="heroRole"></p>
+          <p class="hero-summary" id="heroSummary"></p>
+
+          <ul class="badge-list" id="heroBadges" aria-label="核心关键词"></ul>
+          <div class="hero-actions" id="heroActions"></div>
+        </div>
+
+        <aside class="profile-card brutal-card reveal" aria-label="个人信息">
+          <div class="avatar" id="avatar">
+            <img
+              id="avatarImage"
+              src="./自拍.jpg"
+              alt="段金卓的大头照"
+              width="1080"
+              height="1440"
+              decoding="async"
+              fetchpriority="high"
+            >
+            <span class="avatar-fallback" id="avatarFallback" aria-hidden="true"></span>
+          </div>
+          <h2 class="profile-name" id="profileName"></h2>
+          <p class="profile-subtitle" id="profileSubtitle"></p>
+          <ul class="profile-list" id="profileList"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>AUTOMATION ★ CAMPUS LEADERSHIP ★ VISUAL CREATION ★ KEEP GROWING ★</span>
+        <span>AUTOMATION ★ CAMPUS LEADERSHIP ★ VISUAL CREATION ★ KEEP GROWING ★</span>
+      </div>
+    </div>
+
+    <section class="section" id="highlights">
+      <div class="page-container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-kicker">Quick View</p>
+            <h2 class="section-title">30 秒了解我</h2>
+          </div>
+          <p class="section-description">
+            聚焦专业基础、学生工作、复合能力与长期发展目标。
+          </p>
+        </header>
+
+        <div class="highlight-grid" id="highlightGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="page-container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-kicker">Experience</p>
+            <h2 class="section-title">经历与责任</h2>
+          </div>
+          <p class="section-description">
+            在持续服务集体的过程中提升沟通、协作与执行能力。
+          </p>
+        </header>
+
+        <div
+          class="content-panel brutal-card reveal"
+          id="experienceRoot"
+        ></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="page-container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-kicker">Projects</p>
+            <h2 class="section-title">成长项目</h2>
+          </div>
+          <p class="section-description">
+            围绕专业学习、班级服务与视觉创作持续积累实践经验。
+          </p>
+        </header>
+
+        <div
+          class="content-panel brutal-card reveal"
+          id="projectRoot"
+        ></div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="page-container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-kicker">Capabilities</p>
+            <h2 class="section-title">能力矩阵</h2>
+          </div>
+          <p class="section-description">
+            当前以基础能力建设为主，能力标签反映现阶段学习状态。
+          </p>
+        </header>
+
+        <div class="skill-grid" id="skillGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="page-container">
+        <header class="section-head reveal">
+          <div>
+            <p class="section-kicker">Education</p>
+            <h2 class="section-title">教育与发展方向</h2>
+          </div>
+          <p class="section-description">
+            扎实完成本科学业，为科研实践、考研与推免持续积累。
+          </p>
+        </header>
+
+        <div class="education-grid" id="educationGrid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="page-container footer-inner">
+      <span id="copyright"></span>
+      <span id="updatedAt"></span>
+    </div>
+  </footer>
+
+  <button
+    class="back-to-top brutal-button"
+    id="backToTop"
+    type="button"
+    aria-label="返回顶部"
+    title="返回顶部"
+  >
+    <i class="ri-arrow-up-line" aria-hidden="true"></i>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module">
+    const resume = {
+      name: "段金卓",
+      initials: "段金",
+      status: "正在夯实专业基础 · 开放校园实践与交流",
+      role: "河南理工大学 · 自动化卓越计划班本科生",
+      summary:
+        "自动化卓越计划班大一学生，现任班级心理委员，曾担任高中班长。关注自动控制、智能制造与机器人等方向，具备良好的沟通协调、责任意识与视觉表达能力，正以考研、推免及专业深造为长期目标稳步积累。",
+      location: "中国 · 河南",
+      identity: "本科一年级",
+      direction: "自动化 / 科研实践",
+      goal: "考研与推免",
+      phone: "18530185809",
+      emailParts: ["798817548", "qq.com"],
+      keywords: [
+        "自动化卓越计划班",
+        "班级心理委员",
+        "组织协调",
+        "英语口语",
+        "摄影",
+        "手绘"
+      ],
+      navigation: [
+        ["概览", "highlights"],
+        ["经历", "experience"],
+        ["项目", "projects"],
+        ["技能", "skills"],
+        ["教育", "education"]
+      ],
+      highlights: [
+        {
+          value: "2 段",
+          title: "学生骨干经历",
+          detail: "高中班长与大学心理委员，持续承担班级服务职责。"
+        },
+        {
+          value: "3 条",
+          title: "专业成长主线",
+          detail: "课程基础、编程工具与工程实践同步推进。"
+        },
+        {
+          value: "4 项",
+          title: "复合能力",
+          detail: "沟通、英语口语、摄影与手绘协同发展。"
+        },
+        {
+          value: "1 个",
+          title: "长期升学目标",
+          detail: "持续向考研、推免与专业深造稳步迈进。"
+        }
+      ],
+      experiences: {
+        work: [],
+        internship: [],
+        campus: [
+          {
+            role: "班级心理委员",
+            organization: "河南理工大学",
+            date: "2026.09—至今",
+            bullets: [
+              "关注同学在入学适应、课程学习及人际交往方面的状态，通过日常交流和主动倾听了解需求。",
+              "配合辅导员及班委传达心理健康活动、咨询服务与校内支持信息，促进相关资源有效触达。",
+              "协助收集同学在学习和生活中的意见，在尊重隐私的基础上做好沟通反馈与信息衔接。",
+              "参与班级集体建设，鼓励同学交流互助，持续营造友善、包容且积极的班级氛围。"
+            ],
+            tags: ["同学关怀", "沟通协调", "心理健康宣传", "班级建设"]
+          },
+          {
+            role: "班长",
+            organization: "高中班级",
+            date: "高中阶段",
+            bullets: [
+              "负责班级日常事务协调与信息传达，协助班主任推进学习安排、纪律管理及班级建设。",
+              "协调班委成员分工并跟进任务落实，保障通知、活动与临时事务有序完成。",
+              "收集同学意见，协调同学、班委与教师之间的沟通，减少信息偏差并提升协作效率。",
+              "参与组织主题班会与集体活动，承担前期准备、人员安排和现场执行工作。"
+            ],
+            tags: ["组织管理", "团队协作", "信息传达", "活动执行"]
+          }
+        ]
+      },
+      projects: {
+        professional: [
+          {
+            title: "自动化专业基础能力提升计划",
+            status: "进行中",
+            summary:
+              "围绕卓越计划班培养要求，系统规划课程学习、编程工具、实践训练与升学准备。",
+            result:
+              "形成课程基础、工具能力与工程实践三条成长主线，通过阶段复盘持续优化学习节奏。",
+            tags: [
+              "自动化基础",
+              "C语言·学习中",
+              "Python·规划中",
+              "MATLAB·规划中"
+            ]
+          }
+        ],
+        service: [
+          {
+            title: "班级心理健康支持与沟通实践",
+            status: "持续开展",
+            summary:
+              "针对新生常见的环境适应、课程衔接和人际交往压力，建立日常倾听与反馈渠道。",
+            result:
+              "协助心理健康知识及校内支持资源有效传达，促进同学之间的交流、理解与互助。",
+            tags: ["需求沟通", "同理倾听", "资源传达", "集体建设"]
+          }
+        ],
+        creative: [
+          {
+            title: "校园摄影与手绘创作",
+            status: "长期实践",
+            summary:
+              "围绕校园生活、人物与自然景观开展摄影和手绘创作，通过构图、光影及色彩进行表达。",
+            result:
+              "持续积累视觉观察与创作经验，计划逐步建立个人作品集并参与校园宣传实践。",
+            tags: ["摄影构图", "光影观察", "手绘", "视觉叙事"]
+          }
+        ]
+      },
+      skills: [
+        {
+          name: "专业与学习",
+          icon: "Σ",
+          items: [
+            ["数学与物理基础", "持续夯实"],
+            ["自动化学科认知", "入门积累"],
+            ["自主学习与复盘", "良好"],
+            ["工程实践意识", "培养中"]
+          ]
+        },
+        {
+          name: "数字工具",
+          icon: "</>",
+          items: [
+            ["Office 办公软件", "日常应用"],
+            ["C语言", "学习中"],
+            ["Python", "规划学习"],
+            ["MATLAB", "规划学习"]
+          ]
+        },
+        {
+          name: "协作与表达",
+          icon: "◎",
+          items: [
+            ["沟通协调", "良好"],
+            ["组织与执行", "良好"],
+            ["倾听与共情", "优势能力"],
+            ["英语口语", "日常交流"]
+          ]
+        },
+        {
+          name: "视觉创作",
+          icon: "◇",
+          items: [
+            ["摄影构图", "兴趣特长"],
+            ["光影与画面表达", "持续练习"],
+            ["手绘", "兴趣特长"],
+            ["创意表达", "良好"]
+          ]
+        }
+      ],
+      education: [
+        {
+          school: "河南理工大学",
+          major: "自动化卓越计划班 · 本科",
+          date: "2026.09—至今",
+          bullets: [
+            "重点夯实数学、物理、计算机及自动化专业基础，逐步构建系统化知识体系。",
+            "通过课程学习、课后整理与阶段复盘适应大学自主学习模式。",
+            "关注自动控制、智能制造、机器人及人工智能等方向，计划参与学科竞赛与科研实践。",
+            "重视课程成绩、英语能力和综合素质，为考研、推免及后续深造做好准备。"
+          ]
+        }
+      ],
+      certificates: [],
+      focus: [
+        "扎实完成自动化专业课程，保持稳定、持续的学习投入。",
+        "逐步掌握 C语言、Python、MATLAB 等专业常用工具。",
+        "主动参与实验、学科竞赛与科研实践，提升工程应用能力。",
+        "同步提升英语能力与综合素质，为考研、推免做好准备。"
+      ],
+      updatedAt: "2026年10月"
+    };
+
+    const categoryLabels = {
+      work: "工作经历",
+      internship: "实习经历",
+      campus: "校园经历",
+      professional: "专业成长",
+      service: "班级服务",
+      creative: "视觉创作"
+    };
+
+    const stickerColors = [
+      "var(--lime)",
+      "var(--purple)",
+      "var(--yellow)",
+      "var(--blue)",
+      "var(--pink)",
+      "var(--orange)"
+    ];
+
+    const rotations = [-2, 1.5, -0.8, 2.2, -1.4, 0.7];
+
+    const $ = (selector, context = document) =>
+      context.querySelector(selector);
+
+    const $$ = (selector, context = document) =>
+      Array.from(context.querySelectorAll(selector));
+
+    function create(tag, className = "", text = "") {
+      const element = document.createElement(tag);
+      if (className) element.className = className;
+      if (text !== "") element.textContent = text;
+      return element;
+    }
+
+    function getEmail() {
+      return resume.emailParts.join("@");
+    }
+
+    function styleSticker(element, index) {
+      element.style.setProperty(
+        "--rotate",
+        rotations[index % rotations.length] + "deg"
+      );
+      element.style.background =
+        stickerColors[index % stickerColors.length];
+    }
+
+    function showToast(message) {
+      const toast = $("#toast");
+      toast.textContent = message;
+      toast.classList.add("visible");
+
+      clearTimeout(showToast.timer);
+      showToast.timer = setTimeout(() => {
+        toast.classList.remove("visible");
+      }, 1800);
+    }
+
+    async function copyEmail() {
+      const value = getEmail();
+
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch {
+        const textarea = create("textarea");
+        textarea.value = value;
+        textarea.style.cssText = "position:fixed;opacity:0";
+        document.body.append(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+
+      showToast("邮箱已复制：" + value);
+    }
+
+    function renderNavigation() {
+      resume.navigation.forEach(([label, target]) => {
+        const link = create("a", "nav-link", label);
+        link.href = "#" + target;
+        link.dataset.target = target;
+        $("#navigation").append(link);
+      });
+    }
+
+    function renderHero() {
+      $("#brandName").textContent = resume.name;
+      $("#heroStatus").textContent = resume.status;
+      $("#heroName").textContent = resume.name;
+      $("#heroRole").textContent = resume.role;
+      $("#heroSummary").textContent = resume.summary;
+      $("#avatarFallback").textContent = resume.initials;
+      $("#avatarImage").addEventListener("error", (event) => {
+        event.currentTarget.hidden = true;
+        $("#avatar").classList.add("image-error");
+      });
+      $("#profileName").textContent = resume.name;
+      $("#profileSubtitle").textContent = resume.role;
+
+      resume.keywords.forEach((keyword, index) => {
+        const badge = create("li", "sticker", keyword);
+        styleSticker(badge, index);
+        $("#heroBadges").append(badge);
+      });
+
+      const phoneButton = create("a", "brutal-button");
+      phoneButton.href = "tel:" + resume.phone;
+      phoneButton.style.background = "var(--lime)";
+      phoneButton.innerHTML =
+        '<i class="ri-phone-line" aria-hidden="true"></i><span>联系我</span>';
+
+      const copyButton = create("button", "brutal-button");
+      copyButton.type = "button";
+      copyButton.style.background = "var(--yellow)";
+      copyButton.innerHTML =
+        '<i class="ri-file-copy-line" aria-hidden="true"></i><span>复制邮箱</span>';
+      copyButton.addEventListener("click", copyEmail);
+
+      const emailButton = create("a", "brutal-button");
+      emailButton.href = "mailto:" + getEmail();
+      emailButton.style.background = "var(--purple)";
+      emailButton.innerHTML =
+        '<i class="ri-mail-send-line" aria-hidden="true"></i><span>发送邮件</span>';
+
+      $("#heroActions").append(phoneButton, copyButton, emailButton);
+
+      const profileItems = [
+        ["所在地区", resume.location],
+        ["当前身份", resume.identity],
+        ["专业方向", resume.direction],
+        ["长期目标", resume.goal],
+        ["联系电话", resume.phone],
+        ["电子邮箱", getEmail()]
+      ].filter(([, value]) => value);
+
+      profileItems.forEach(([label, value]) => {
+        const item = create("li");
+        item.append(create("span", "profile-label", label));
+
+        if (label === "联系电话") {
+          const link = create("a", "profile-value", value);
+          link.href = "tel:" + value;
+          item.append(link);
+        } else if (label === "电子邮箱") {
+          const button = create("button", "profile-value", value);
+          button.type = "button";
+          button.title = "点击复制邮箱";
+          button.addEventListener("click", copyEmail);
+          item.append(button);
+        } else {
+          item.append(create("span", "profile-value", value));
+        }
+
+        $("#profileList").append(item);
+      });
+    }
+
+    function renderHighlights() {
+      resume.highlights.forEach((item) => {
+        const card = create("article", "highlight-card brutal-card reveal");
+
+        card.append(
+          create("p", "highlight-number", item.value),
+          create("h3", "highlight-title", item.title),
+          create("p", "highlight-detail", item.detail)
+        );
+
+        $("#highlightGrid").append(card);
+      });
+    }
+
+    function createTagList(tags) {
+      const list = create("ul", "tag-list");
+
+      tags.forEach((tag, index) => {
+        const item = create("li", "sticker", tag);
+        styleSticker(item, index);
+        list.append(item);
+      });
+
+      return list;
+    }
+
+    function renderExperience(items) {
+      const timeline = create("ol", "timeline");
+
+      items.forEach((item) => {
+        const entry = create("li", "timeline-item");
+        entry.append(create("span", "timeline-dot"));
+
+        const box = create("article", "timeline-box brutal-card");
+        const head = create("div", "timeline-head");
+
+        head.append(
+          create("h3", "timeline-role", item.role),
+          create("span", "timeline-time", item.date)
+        );
+
+        const bullets = create("ul", "bullet-list");
+        item.bullets.forEach((bullet) => {
+          bullets.append(create("li", "", bullet));
+        });
+
+        box.append(
+          head,
+          create("p", "timeline-org", item.organization),
+          bullets,
+          createTagList(item.tags)
+        );
+
+        entry.append(box);
+        timeline.append(entry);
+      });
+
+      return timeline;
+    }
+
+    function renderProjects(items, categoryIndex) {
+      const grid = create("div", "project-grid");
+
+      items.forEach((project, index) => {
+        const card = create("article", "project-card brutal-card");
+        const number = String(categoryIndex * 10 + index + 1).padStart(2, "0");
+
+        card.append(
+          create("span", "project-index", number),
+          create("h3", "project-title", project.title),
+          create("span", "project-status", "● " + project.status),
+          create("p", "project-summary", project.summary)
+        );
+
+        if (project.result) {
+          const result = create("p", "project-result");
+          const label = create("strong", "", "阶段结果：");
+          result.append(label, document.createTextNode(project.result));
+          card.append(result);
+        }
+
+        card.append(createTagList(project.tags));
+        grid.append(card);
+      });
+
+      return grid;
+    }
+
+    function activateTab(tabList, selectedTab, focus = false) {
+      const root = tabList.parentElement;
+
+      $$('[role="tab"]', tabList).forEach((tab) => {
+        const selected = tab === selectedTab;
+        tab.setAttribute("aria-selected", String(selected));
+        tab.tabIndex = selected ? 0 : -1;
+      });
+
+      $$('[role="tabpanel"]', root).forEach((panel) => {
+        panel.hidden =
+          panel.id !== selectedTab.getAttribute("aria-controls");
+      });
+
+      if (focus) selectedTab.focus();
+    }
+
+    function handleTabKeydown(event) {
+      if (
+        !["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)
+      ) {
+        return;
+      }
+
+      event.preventDefault();
+
+      const tabs = $$('[role="tab"]', event.currentTarget);
+      const currentIndex = tabs.indexOf(document.activeElement);
+      let nextIndex = currentIndex;
+
+      if (event.key === "ArrowRight") {
+        nextIndex = (currentIndex + 1) % tabs.length;
+      }
+
+      if (event.key === "ArrowLeft") {
+        nextIndex = (currentIndex - 1 + tabs.length) % tabs.length;
+      }
+
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = tabs.length - 1;
+
+      activateTab(event.currentTarget, tabs[nextIndex], true);
+    }
+
+    function buildTabs(root, data, renderer, prefix) {
+      const categories = Object.entries(data).filter(
+        ([, items]) => Array.isArray(items) && items.length
+      );
+
+      if (!categories.length) {
+        root.closest(".section")?.remove();
+        return;
+      }
+
+      const tabList = create("div", "tabs");
+      tabList.setAttribute("role", "tablist");
+      tabList.setAttribute("aria-label", prefix + "分类");
+
+      const panels = [];
+
+      categories.forEach(([key, items], index) => {
+        const tabId = `${prefix}-tab-${key}`;
+        const panelId = `${prefix}-panel-${key}`;
+
+        const tab = create(
+          "button",
+          "tab-button",
+          categoryLabels[key] || key
+        );
+
+        tab.type = "button";
+        tab.id = tabId;
+        tab.setAttribute("role", "tab");
+        tab.setAttribute("aria-controls", panelId);
+        tab.setAttribute("aria-selected", String(index === 0));
+        tab.tabIndex = index === 0 ? 0 : -1;
+        tab.addEventListener("click", () => activateTab(tabList, tab));
+
+        const panel = create("div");
+        panel.id = panelId;
+        panel.setAttribute("role", "tabpanel");
+        panel.setAttribute("aria-labelledby", tabId);
+        panel.tabIndex = 0;
+        panel.hidden = index !== 0;
+        panel.append(renderer(items, index));
+
+        tabList.append(tab);
+        panels.push(panel);
+      });
+
+      tabList.addEventListener("keydown", handleTabKeydown);
+      root.append(tabList, ...panels);
+    }
+
+    function renderSkills() {
+      resume.skills.forEach((group, groupIndex) => {
+        if (!group.items.length) return;
+
+        const card = create("article", "skill-card brutal-card reveal");
+        const heading = create("h3", "skill-heading");
+
+        heading.append(
+          create("span", "skill-icon", group.icon),
+          document.createTextNode(group.name)
+        );
+
+        const list = create("ul", "skill-list");
+
+        group.items.forEach(([name, level], index) => {
+          const item = create("li", "skill-item");
+          item.style.setProperty(
+            "--rotate",
+            rotations[(groupIndex + index) % rotations.length] + "deg"
+          );
+
+          item.append(
+            create("span", "", name),
+            create("span", "skill-level", level)
+          );
+
+          list.append(item);
+        });
+
+        card.append(heading, list);
+        $("#skillGrid").append(card);
+      });
+    }
+
+    function renderEducation() {
+      resume.education.forEach((education) => {
+        const card = create(
+          "article",
+          "education-card brutal-card reveal"
+        );
+
+        const bullets = create("ul", "bullet-list");
+        education.bullets.forEach((bullet) => {
+          bullets.append(create("li", "", bullet));
+        });
+
+        card.append(
+          create("h3", "", education.school),
+          create("p", "education-major", education.major),
+          create("span", "education-date", education.date),
+          bullets
+        );
+
+        $("#educationGrid").append(card);
+      });
+
+      if (resume.focus.length) {
+        const focusCard = create(
+          "aside",
+          "focus-card brutal-card reveal"
+        );
+
+        focusCard.append(
+          create("h3", "", "本科阶段发展重点")
+        );
+
+        const list = create("ul", "focus-list");
+        resume.focus.forEach((item) => {
+          list.append(create("li", "", item));
+        });
+
+        focusCard.append(list);
+        $("#educationGrid").append(focusCard);
+      }
+
+      if (resume.certificates.length) {
+        const certificateCard = create(
+          "article",
+          "education-card brutal-card reveal"
+        );
+
+        certificateCard.append(create("h3", "", "证书与荣誉"));
+
+        const list = create("ul", "focus-list");
+        resume.certificates.forEach((item) => {
+          list.append(create("li", "", item));
+        });
+
+        certificateCard.append(list);
+        $("#educationGrid").append(certificateCard);
+      }
+    }
+
+    function getTheme() {
+      const explicitTheme = document.documentElement.dataset.theme;
+
+      if (explicitTheme) return explicitTheme;
+
+      return matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    }
+
+    function updateThemeButton() {
+      const dark = getTheme() === "dark";
+      const button = $("#themeButton");
+
+      button.innerHTML = dark
+        ? '<i class="ri-sun-line" aria-hidden="true"></i>'
+        : '<i class="ri-moon-line" aria-hidden="true"></i>';
+
+      button.title = dark ? "切换至浅色模式" : "切换至深色模式";
+      button.setAttribute("aria-label", button.title);
+      button.style.background = dark ? "var(--yellow)" : "var(--purple)";
+    }
+
+    function toggleTheme() {
+      const nextTheme = getTheme() === "dark" ? "light" : "dark";
+      document.documentElement.dataset.theme = nextTheme;
+
+      try {
+        localStorage.setItem("resume-theme", nextTheme);
+      } catch {}
+
+      updateThemeButton();
+    }
+
+    function setupRevealAnimation() {
+      const elements = $$(".reveal");
+
+      if (
+        matchMedia("(prefers-reduced-motion: reduce)").matches ||
+        !("IntersectionObserver" in window)
+      ) {
+        elements.forEach((element) => element.classList.add("visible"));
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        (entries, instance) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add("visible");
+            instance.unobserve(entry.target);
+          });
+        },
+        {
+          threshold: .08,
+          rootMargin: "0px 0px -24px"
+        }
+      );
+
+      elements.forEach((element) => observer.observe(element));
+    }
+
+    function setupActiveNavigation() {
+      if (!("IntersectionObserver" in window)) return;
+
+      const links = $$(".nav-link");
+      const sections = links
+        .map((link) => document.getElementById(link.dataset.target))
+        .filter(Boolean);
+
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const current = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+          if (!current) return;
+
+          links.forEach((link) => {
+            const active = link.dataset.target === current.target.id;
+            link.classList.toggle("active", active);
+
+            if (active) {
+              link.setAttribute("aria-current", "page");
+            } else {
+              link.removeAttribute("aria-current");
+            }
+          });
+        },
+        {
+          rootMargin: "-30% 0px -55%",
+          threshold: [.01, .2]
+        }
+      );
+
+      sections.forEach((section) => observer.observe(section));
+    }
+
+    function setupScrollEffects() {
+      let scheduled = false;
+
+      const update = () => {
+        const scrollTop = document.documentElement.scrollTop;
+        const scrollableHeight =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+
+        const percentage = scrollableHeight
+          ? scrollTop / scrollableHeight * 100
+          : 0;
+
+        $("#scrollProgress").style.width = percentage + "%";
+        $("#backToTop").classList.toggle("visible", scrollTop > 520);
+        scheduled = false;
+      };
+
+      addEventListener(
+        "scroll",
+        () => {
+          if (scheduled) return;
+          scheduled = true;
+          requestAnimationFrame(update);
+        },
+        { passive: true }
+      );
+
+      update();
+    }
+
+    function initialize() {
+      renderNavigation();
+      renderHero();
+      renderHighlights();
+
+      buildTabs(
+        $("#experienceRoot"),
+        resume.experiences,
+        renderExperience,
+        "experience"
+      );
+
+      buildTabs(
+        $("#projectRoot"),
+        resume.projects,
+        renderProjects,
+        "project"
+      );
+
+      renderSkills();
+      renderEducation();
+
+      $("#copyright").textContent =
+        `© ${new Date().getFullYear()} ${resume.name}`;
+
+      $("#updatedAt").textContent =
+        "简历更新时间：" + resume.updatedAt;
+
+      $("#themeButton").addEventListener("click", toggleTheme);
+      $("#printButton").addEventListener("click", () => window.print());
+
+      $("#backToTop").addEventListener("click", () => {
+        scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      updateThemeButton();
+      setupRevealAnimation();
+      setupActiveNavigation();
+      setupScrollEffects();
+    }
+
+    initialize();
+  </script>
+</body>
+</html>
